@@ -1,30 +1,25 @@
 {
-  "Free_servers": [
+  "Version":"2.0",
+  "ReleaseNotes":"BEDO VPN CONFIG",
+
+  "Networks":[
     {
-      "server_name": "BEDO SSL SERVER",
-      "server_host": "57.129.121.229",
-      "server_port": "443",
-      "ssl_port": "443",
-      "category": "ocshttp",
-      "username": "racevpn.com-hvdsss54",
-      "password": "hamo012",
-      "custom_cert": ""
+      "Name":"SSL MODE",
+      "isSSL":true,
+      "SNI":"ekb.eg"
     }
   ],
 
-  "Payloads": [
+  "Servers":[
     {
-      "friendly_name": "BEDO SSL MODE",
-      "payload": "",
-      "sausage": "ekb.eg",
-      "host": "Pulled",
-      "port": "Pulled",
-      "dothost": "",
-      "message": "SSL Mode",
-      "method": "ssl",
-      "category": "ocshttp",
-      "query": "normal",
-      "sslws": "false"
+      "Name":"BEDO SERVER",
+      "ServerIP":"57.129.121.229",
+      "ServerPort":"22",
+      "SSLPort":"443",
+      "ProxyIP":"racevpn.com",
+      "ProxyPort":"443",
+      "ServerUser":"hvdsss54",
+      "ServerPass":"hamo012"
     }
   ]
 }
